@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= config.seo.title %></title>
+    <meta name="description" content="<%= config.seo.description %>">
+    <meta name="keywords" content="<%= config.seo.keywords %>">
+    <meta property="og:title" content="<%= config.seo.title %>" />
+    <meta property="og:description" content="<%= config.seo.description %>" />
+    <meta property="og:image" content="<%= config.seo.ogImage %>" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <img src="<%= config.profile.avatar %>" alt="<%= config.profile.name %>" class="avatar">
+            <div class="name-container">
+                <h1 class="name"><%= config.profile.name %></h1>
+                <% if (config.profile.verified) { %>
+                <i class="fas fa-check-circle verified"></i>
+                <% } %>
+            </div>
+            <p class="bio"><%= config.profile.bio %></p>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <% config.socialMedia.forEach(social => { %>
+                <a href="<%= social.url %>" 
+                   class="social-icon" 
+                   title="<%= social.name %>"
+                   data-color="<%= social.color %>"
+                   <% if (social.colorDark) { %>data-color-dark="<%= social.colorDark %>"<% } %>>
+                    <i class="<%= social.icon %>"></i>
+                </a>
+                <% }); %>
+            </div>
+        </div>
+
+        <!-- Link Sections -->
+        <% config.linkSections.forEach(section => { %>
+        <div class="section-divider">
+            <span class="section-title"><%= section.title %></span>
+        </div>
+
+        <div class="links-grid">
+            <% section.links.forEach(link => { %>
+            <a href="<%= link.url %>" 
+               class="link-card"
+               data-color="<%= link.color %>">
+                <i class="<%= link.icon %> link-icon"></i>
+                <div class="link-content">
+                    <div class="link-title"><%= link.title %></div>
+                    <div class="link-subtitle"><%= link.subtitle %></div>
+                </div>
+                <i class="fas fa-arrow-right link-arrow"></i>
+            </a>
+            <% }); %>
+        </div>
+        <% }); %>
+
+        <!-- Spotify Section -->
+        <% if (config.spotify.enabled) { %>
+        <div class="section-divider">
+            <span class="section-title"><%= config.spotify.title %></span>
+        </div>
+
+        <div class="spotify-section">
+            <iframe class="spotify-embed" 
+                    src="<%= config.spotify.playlistUrl %>" 
+                    allowfullscreen 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy">
+            </iframe>
+        </div>
+        <% } %>
+
+        <!-- Footer -->
+        <div class="footer">
+            <a href="<%= config.footer.link %>"><%= config.footer.text %></a>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>

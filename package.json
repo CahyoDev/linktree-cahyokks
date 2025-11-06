@@ -1,0 +1,30 @@
+{
+  "name": "simple-linktree",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "linktree",
+    "simple",
+    "linktree"
+  ],
+  "homepage": "https://github.com/cabrata/simple-linktree#readme",
+  "bugs": {
+    "url": "https://github.com/cabrata/simple-linktree/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cabrata/simple-linktree.git"
+  },
+  "license": "ISC",
+  "author": "cabrata",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {}
+}
