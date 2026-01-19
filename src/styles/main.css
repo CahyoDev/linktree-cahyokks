@@ -9,6 +9,7 @@
 @import './components/_spotify.css';
 @import './components/_features.css';
 @import './components/_visual-effects.css';
+@import './components/_advanced-features.css';
 
 /* Layout */
 @import './layout/_container.css';

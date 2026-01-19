@@ -45,7 +45,7 @@ module.exports = (env, argv) => {
       }),
       new MiniCssExtractPlugin({
         filename: 'css/[name].[contenthash:8].css',
-      }),
+      })
     ],
     optimization: {
       minimizer: [

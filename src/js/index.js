@@ -8,6 +8,11 @@ import { TiltEffectComponent } from './components/TiltEffectComponent';
 import { TypingAnimationComponent } from './components/TypingAnimationComponent';
 import { ParticlesComponent } from './components/ParticlesComponent';
 import { SkeletonLoadingComponent } from './components/SkeletonLoadingComponent';
+import { ScrollProgressComponent } from './components/ScrollProgressComponent';
+import { BackToTopComponent } from './components/BackToTopComponent';
+import { CommandPaletteComponent } from './components/CommandPaletteComponent';
+import { SoundEffectsComponent } from './components/SoundEffectsComponent';
+import { ConfettiComponent } from './components/ConfettiComponent';
 import config from '../config/data';
 
 class App {
@@ -25,23 +30,41 @@ class App {
   }
 
   initComponents() {
-    // Initialize skeleton loading first
-    new SkeletonLoadingComponent();
-    
-    // Initialize background particles
+    // Initialize immediate effects (no DOM dependency)
+    new ScrollProgressComponent();
+    new BackToTopComponent();
     new ParticlesComponent();
     
-    // Initialize other components after skeleton
+    // Initialize skeleton loading
+    new SkeletonLoadingComponent();
+    
+    // Initialize components that need DOM (after skeleton finishes)
     setTimeout(() => {
-      new SocialIconsComponent();
-      new LinksComponent();
+      // Check if elements exist before initializing
+      const profileExists = document.querySelector('.profile-header');
+      const linksExist = document.querySelectorAll('.link-card').length > 0;
+      
+      if (profileExists) {
+        new TypingAnimationComponent(config);
+       // new ViewCounterComponent();
+        new ShareButtonComponent(config);
+      }
+      
+      if (linksExist) {
+        new SocialIconsComponent();
+        new LinksComponent();
+        new ClickAnalyticsComponent();
+        new TiltEffectComponent();
+      }
+      
+      // Always initialize these
       new ThemeToggleComponent();
-     // new ViewCounterComponent();
-      new ShareButtonComponent(config);
-      new ClickAnalyticsComponent();
-      new TiltEffectComponent();
-      new TypingAnimationComponent(config);
-    }, 1500);
+      new CommandPaletteComponent(config);
+      new SoundEffectsComponent();
+      new ConfettiComponent();
+      
+      console.log('✅ All components initialized!');
+    }, 1600); // Slightly after skeleton animation
 
     // Add smooth scroll behavior
     document.documentElement.style.scrollBehavior = 'smooth';

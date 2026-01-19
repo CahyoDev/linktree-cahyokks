@@ -106,6 +106,10 @@ export class ShareButtonComponent {
       try {
         await navigator.clipboard.writeText(this.profileUrl);
         this.showToast('Link copied to clipboard!');
+        
+        // Dispatch event for sound effect
+        document.dispatchEvent(new CustomEvent('clipboardCopy'));
+        
         copyBtn.innerHTML = `
           <i class="fas fa-check"></i>
           <span>Copied!</span>
@@ -120,6 +124,7 @@ export class ShareButtonComponent {
         input.select();
         document.execCommand('copy');
         this.showToast('Link copied!');
+        document.dispatchEvent(new CustomEvent('clipboardCopy'));
       }
     });
 
