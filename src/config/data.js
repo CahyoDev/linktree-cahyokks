@@ -17,7 +17,7 @@ module.exports = {
     {
       name: "Twitter",
       icon: "fab fa-twitter",
-      url: "https://twitter.com/ArifzynXD",
+      url: "https://bokep%20anak%20kecil",
       color: "#1DA1F2"
     },
     {
@@ -30,32 +30,32 @@ module.exports = {
     {
       name: "LinkedIn",
       icon: "fab fa-linkedin",
-      url: "https://linkedin.com/in/ArifzynXD",
+      url: "https://bokep%20anak%20kecil",
       color: "#0A66C2"
     },
     {
       name: "TikTok",
       icon: "fab fa-tiktok",
-      url: "https://tiktok.com/@arifzxa1912",
+      url: "https://tiktok.com/@suaminya_yae",
       color: "#000000",
       colorDark: "#fff"
     },
     {
       name: "YouTube",
       icon: "fab fa-youtube",
-      url: "https://youtube.com/@arifzxa19",
+      url: "https://youtube.com/@cahyo1242",
       color: "#FF0000"
     },
     {
       name: "Email",
       icon: "fas fa-envelope",
-      url: "mailto:contact@arifzyn.site",
+      url: "mailto:caubong202@gmail.com",
       color: "#EA4335"
     },
     {
       name: "Telegram",
       icon: "fab fa-telegram",
-      url: "https://t.me/arifzxa1912",
+      url: "https://t.me/cahyokuun",
       color: "#0088cc"
     }
   ],
@@ -68,7 +68,7 @@ module.exports = {
           title: "WhatsApp Channel",
           subtitle: "Join for exclusive updates",
           icon: "fab fa-whatsapp",
-          url: "https://whatsapp.com/channel/0029Vaj5VRAFHWpy0YCWGe0U",
+          url: "https://whatsapp.com/channel/0029VainhpZ3mFYBc0p9BX0I",
           color: "#25D366"
         }
       ]
