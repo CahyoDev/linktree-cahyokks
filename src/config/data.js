@@ -17,7 +17,7 @@ module.exports = {
     {
       name: "Twitter",
       icon: "fab fa-twitter",
-      url: "https://bokep%20anak%20kecil",
+      url: "https://nothing",
       color: "#1DA1F2"
     },
     {
@@ -30,7 +30,7 @@ module.exports = {
     {
       name: "LinkedIn",
       icon: "fab fa-linkedin",
-      url: "https://bokep%20anak%20kecil",
+      url: "https://nothing",
       color: "#0A66C2"
     },
     {
