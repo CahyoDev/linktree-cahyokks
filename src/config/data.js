@@ -102,7 +102,7 @@ module.exports = {
   spotify: {
     enabled: true,
     title: "My Playlist",
-    playlistUrl: "https://open.spotify.com/embed/playlist/3eydlGlNdYVNFIIfLmublg?utm_source=generator&theme=0"
+    playlistUrl: "https://open.spotify.com/embed/playlist/2gRz8DBnVSIKa6pCah73ZR?si=aogo0CPYTqyaNGHqMdPQXw&pi=cGpBM1loRe-9S"
   },
 
   footer: {
