@@ -1,9 +1,9 @@
 module.exports = {
   profile: {
-    name: "Arifzyn",
-    username: "arzyn",
+    name: "Cahyok",
+    username: "cahyok_10",
     bio: "You can't sit around envying other people's worlds. You have to go out and change your own.",
-    avatar: "https://github.com/Arifzyn19.png",
+    avatar: "https://raw.githubusercontent.com/CahyoDev/audio/refs/heads/main/cahyok.jpg",
     verified: true
   },
 
@@ -11,7 +11,7 @@ module.exports = {
     {
       name: "Instagram",
       icon: "fab fa-instagram",
-      url: "https://instagram.com/arifzxa19",
+      url: "https://instagram.com/cahyok_10",
       color: "#E4405F"
     },
     {
@@ -23,7 +23,7 @@ module.exports = {
     {
       name: "GitHub",
       icon: "fab fa-github",
-      url: "https://github.com/Arifzyn19",
+      url: "https://github.com/CahyoDev",
       color: "#333",
       colorDark: "#fff"
     },
@@ -92,7 +92,7 @@ module.exports = {
           title: "QRIS",
           subtitle: "Support via QRIS",
           icon: "fas fa-heart",
-          url: "https://raw.githubusercontent.com/Arifzyn19/Arifzyn19/refs/heads/main/media/QRIS.png",
+          url: "https://raw.githubusercontent.com/CahyoDev/audio/refs/heads/main/QRIS-Miko-Store.png",
           color: "#ff6b6b"
         },
       ]
@@ -106,14 +106,14 @@ module.exports = {
   },
 
   footer: {
-    text: "© 2025 Arifzyn. All rights reserved.",
+    text: "© 2026 Cahyok. All rights reserved.",
     link: "https://arifzyn.my.id"
   },
 
   seo: {
-    title: "Arifzyn - Links",
+    title: "Cahyok - Links",
     description: "You can't sit around envying other people's worlds. You have to go out and change your own.",
-    keywords: "arifzyn, links, social media, portfolio",
-    ogImage: "https://github.com/Arifzyn19.png"
+    keywords: "cahyok, links, social media, portfolio",
+    ogImage: "https://raw.githubusercontent.com/CahyoDev/audio/refs/heads/main/cahyok.jpg"
   }
 };
