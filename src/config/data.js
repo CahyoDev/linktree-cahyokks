@@ -80,7 +80,7 @@ module.exports = {
           title: "My Portfolio",
           subtitle: "Check out my work & projects",
           icon: "fas fa-briefcase",
-          url: "https://arifzyn.site",
+          url: "https://portofolio.cahyok.site",
           color: "#8b5cf6"
         }
       ]
