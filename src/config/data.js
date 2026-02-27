@@ -61,44 +61,55 @@ module.exports = {
   ],
 
   linkSections: [
-    {
-      title: "Connect with Me",
-      links: [
-        {
-          title: "WhatsApp Channel",
-          subtitle: "Join for exclusive updates",
-          icon: "fab fa-whatsapp",
-          url: "https://whatsapp.com/channel/0029VainhpZ3mFYBc0p9BX0I",
-          color: "#25D366"
-        }
-      ]
-    },
-    {
-      title: "Featured Links",
-      links: [
-        {
-          title: "My Portfolio",
-          subtitle: "Check out my work & projects",
-          icon: "fas fa-briefcase",
-          url: "https://portofolio.cahyok.site",
-          color: "#8b5cf6"
-        }
-      ]
-    },
-    {
-      title: "Support",
-      links: [
-        {
-          title: "QRIS",
-          subtitle: "Support via QRIS",
-          icon: "fas fa-heart",
-          url: "https://raw.githubusercontent.com/CahyoDev/audio/refs/heads/main/QRIS-Miko-Store.png",
-          color: "#ff6b6b"
-        }
-      ]
-    }
-  ],
-
+  {
+    title: "Connect with Me",
+    links: [
+      {
+        title: "WhatsApp Channel",
+        subtitle: "Join for exclusive updates",
+        icon: "fab fa-whatsapp",
+        url: "https://whatsapp.com/channel/0029VainhpZ3mFYBc0p9BX0I",
+        color: "#25D366"
+      }
+    ]
+  },
+  {
+    title: "Featured Links",
+    links: [
+      {
+        title: "My Portfolio",
+        subtitle: "Check out my work & projects",
+        icon: "fas fa-briefcase",
+        url: "https://portofolio.cahyok.site",
+        color: "#8b5cf6"
+      }
+    ]
+  },
+  {
+    title: "My Store",
+    links: [
+      {
+        title: "Visit Store",
+        subtitle: "Check out my products",
+        icon: "fas fa-store",
+        url: "https://yourstorelink.com",
+        color: "#3b82f6"
+      }
+    ]
+  },
+  {
+    title: "Support",
+    links: [
+      {
+        title: "QRIS",
+        subtitle: "Support via QRIS",
+        icon: "fas fa-heart",
+        url: "https://raw.githubusercontent.com/CahyoDev/audio/refs/heads/main/QRIS-Miko-Store.png",
+        color: "#ff6b6b"
+      }
+    ]
+  }
+],
   spotify: {
     enabled: true,
     title: "My Playlist",
