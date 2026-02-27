@@ -92,7 +92,7 @@ module.exports = {
         title: "Visit Store",
         subtitle: "Check out my products",
         icon: "fas fa-store",
-        url: "https://yourstorelink.com",
+        url: "https://store.cahyok.site",
         color: "#3b82f6"
       }
     ]
