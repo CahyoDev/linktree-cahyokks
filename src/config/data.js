@@ -97,7 +97,8 @@ module.exports = {
         },
       ]
     }
-  ],
+  ]
+},
     {
       title: "Support",
       links: [
