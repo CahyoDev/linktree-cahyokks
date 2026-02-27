@@ -85,6 +85,19 @@ module.exports = {
         }
       ]
     },
+     {
+      title: "Support",
+      links: [
+        {
+          title: "QRIS",
+          subtitle: "Support via QRIS",
+          icon: "fas fa-heart",
+          url: "https://raw.githubusercontent.com/CahyoDev/audio/refs/heads/main/QRIS-Miko-Store.png",
+          color: "#ff6b6b"
+        },
+      ]
+    }
+  ],
     {
       title: "Support",
       links: [
